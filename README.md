@@ -7,7 +7,7 @@
 3. Create droplet (Digital Ocean VM):
   name: ubuntu-0XX (2 GB RAM, 40 GB Disk)
 4. Copy save ip address
-5. `ssh root@ip` into VM
+5. `ssh root@ip` or `ssh -i <key location> root@ip` into VM (Alternatives [https://stackoverflow.com/questions/2419566/best-way-to-use-multiple-ssh-private-keys-on-one-client](here).)
 6. Install docker via <get.docker.com> on VM
 
 ```
