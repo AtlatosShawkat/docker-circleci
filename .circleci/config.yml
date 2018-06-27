@@ -5,7 +5,6 @@ jobs:
       - image: dataduke/sample-node
     steps:
       - checkout
-      - run: npm test
   test:
     docker:
       - image: dataduke/sample-node
