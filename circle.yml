@@ -3,3 +3,14 @@
 # Build docker image as dependcy override
 
 # Run npm test in docker container and in test section of job
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t dataduke/sample-node .
+
+test:
+  override:
+- docker run dataduke/sample-node npm test
